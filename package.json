@@ -1,6 +1,6 @@
 {
   "name": "jsonfmt",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "format json from command line",
   "main": "index.js",
   "bin": {
