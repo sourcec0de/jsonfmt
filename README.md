@@ -4,7 +4,7 @@ jsonfmt - JSON FORMAT
 #### Installation
 
 ```shell
-npm install jsonftm -g
+npm install jsonfmt -g
 ```
 
 #### Example 1 - output
