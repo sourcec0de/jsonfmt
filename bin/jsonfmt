@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+'use strict';
+
+var fs       = require('fs');
+var path     = require('path');
+var argv     = require('optimist').argv;
+var isWin32  = process.env.platform === 'win32';
+var pathKey  = isWin32 ? 'USERPROFILE' : 'HOME';
+var HOME     = process.env[pathKey];
+
+
+var argv     = require('optimist')
+               .usage('format contents of json file')
+               .demand('f')
+               .alias('f', 'file')
+               .describe('f', 'path to json file')
+               .argv;
+
+
+var filePath = path.normalize(argv.file.replace('~',HOME));
+
+console.log(JSON.stringify(JSON.parse(fs.readFileSync(filePath,'utf8')),null,4));

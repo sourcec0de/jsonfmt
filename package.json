@@ -1,0 +1,17 @@
+{
+  "name": "jsonfmt",
+  "version": "0.0.1",
+  "description": "format json from command line",
+  "main": "index.js",
+  "bin": {
+    "jsonfmt": "./bin/jsonfmt"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Qualls.James@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "optimist": "~0.6.1"
+  }
+}
